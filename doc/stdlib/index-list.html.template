@@ -633,7 +633,7 @@ through the <tt>Require Import</tt> command.</p>
   <dt> <b>FSets</b>:
     Modular implementation of finite sets/maps using lists or
     efficient trees. For sets, please consider the more
-    modern MSets. Namespace Stdlib.FSets.
+    modern MSets.
   </dt>
   <dd>
     theories/FSets/FSetInterface.v
