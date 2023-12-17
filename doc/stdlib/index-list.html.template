@@ -666,7 +666,7 @@ through the <tt>Require Import</tt> command.</p>
   </dd>
 
   <dt> <b>Wellfounded</b>:
-       Well-founded Relations
+    Well-founded Relations in namespace Stdlib.Wellfounded.
   </dt>
   <dd>
     theories/Wellfounded/Disjoint_Union.v
