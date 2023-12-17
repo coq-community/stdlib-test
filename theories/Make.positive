@@ -1,0 +1,9 @@
+Numbers/AltBinNotations.v
+PArith/Pnat.v
+PArith/POrderedType.v
+PArith/BinPos.v
+PArith/PArith.v
+PArith/BinPosDef.v
+
+-Q Numbers Stdlib.Numbers
+-Q PArith Stdlib.PArith
