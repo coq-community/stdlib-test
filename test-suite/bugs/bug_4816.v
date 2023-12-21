@@ -19,8 +19,6 @@ Section Foo.
   End Bar.
 End Foo.
 
-Require Stdlib.Classes.RelationClasses.
-
 Class PreOrder (A : Type) (r : A -> A -> Type) : Type :=
 { refl : forall x, r x x }.
 
