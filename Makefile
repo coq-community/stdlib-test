@@ -12,6 +12,7 @@ refman-html:
 	dune build --no-buffer @refman-html
 
 stdlib-html:
+	dune build -p coq-stdlib @install
 	dune build @stdlib-html
 
 # Ideally this would be generated from .nix/config.nix, currently obtained with
