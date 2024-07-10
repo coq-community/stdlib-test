@@ -1,3 +1,3 @@
 (* Test that ExtrHaskellString transitively requires ExtrHaskellBasic *)
-Require Stdlib.extraction.ExtrHaskellString.
-Import Stdlib.extraction.ExtrHaskellBasic.
+From Stdlib Require ExtrHaskellString.
+Import Stdlib.extraction.All.ExtrHaskellBasic.
