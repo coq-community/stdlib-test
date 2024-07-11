@@ -43,15 +43,15 @@ This package includes the Coq Standard Library, that is to say, the
 set of modules usually bound to the Stdlib.* namespace."))
 
 (package
- (name coq-doc)
+ (name coq-stdlib-doc)
  (license "OPUBL-1.0")
  (depends
   (conf-python-3 :build)
   (coq (and :build (= :version))))
- (synopsis "The Coq Proof Assistant --- Reference Manual")
+ (synopsis "The Coq Proof Assistant Standard Library --- Reference Manual")
  (description "Coq is a formal proof management system. It provides
 a formal language to write mathematical definitions, executable
 algorithms and theorems together with an environment for
 semi-interactive development of machine-checked proofs.
 
-This package provides the Coq Reference Manual."))
+This package provides the Reference Manual for the Standard Library."))
