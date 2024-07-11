@@ -7,33 +7,33 @@ of program refinements. To use the Derive extension it must first be
 required with ``Require Stdlib.derive.Derive``. When the extension is loaded,
 it provides the following command:
 
-.. cmd:: Derive @open_binders in @type as @ident
-         Derive @open_binders SuchThat @type As @ident
+.. cmd:: Derive open_binders in type as ident
+         Derive open_binders SuchThat type As ident
 
-   where :n:`@open_binders` is a list of the form
-   :n:`@ident__i : @type__i` which can appear in :n:`@type`. This
+   where :n:`open_binders` is a list of the form
+   :n:`ident__i : type__i` which can appear in :n:`type`. This
    command opens a new proof presenting the user with a goal for
-   :n:`@type` in which each name :n:`@ident__i` is bound to an
+   :n:`type` in which each name :n:`ident__i` is bound to an
    existential variable of same name :g:`?ident__i` (these
    existential variables are shelved goals, as
-   described in :tacn:`shelve`).
+   described in ``shelve``).
 
-   When the proof is complete, Coq defines :term:`constants <constant>`
-   for each :n:`@ident__i` and for :n:`@ident`:
+   When the proof is complete, Coq defines constants
+   for each :n:`ident__i` and for :n:`ident`:
 
-   + The first ones, named :n:`@ident__i`, are defined as the proof of the
+   + The first ones, named :n:`ident__i`, are defined as the proof of the
      shelved goals (which are also the value of :n:`?ident__i`). They are always
      transparent.
-   + The final one is named :n:`@ident`. It has type :n:`@type`, and its :term:`body` is
+   + The final one is named :n:`ident`. It has type :n:`type`, and its body is
      the proof of the initially visible goal. It is opaque if the proof
-     ends with :cmd:`Qed`, and transparent if the proof ends with :cmd:`Defined`.
+     ends with ``Qed``, and transparent if the proof ends with ``Defined``.
 
 .. example::
 
   .. coqtop:: all
 
      Require Stdlib.derive.Derive.
-     Require Import PeanoNat.
+     From Stdlib Require Import PeanoNat.
 
      Section P.
 
@@ -58,5 +58,5 @@ refinement or a non-executable property from which deriving a program
 is convenient.
 
 .. note::
-   The syntax :n:`Derive @open_binders SuchThat @type As @ident` is obsolete
+   The syntax :n:`Derive open_binders SuchThat type As ident` is obsolete
    and to be avoided.
