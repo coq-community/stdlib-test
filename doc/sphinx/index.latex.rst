@@ -10,33 +10,27 @@ Introduction
 
 .. include:: license.rst
 
-----------------------
-Specification language
-----------------------
+--------
+Overview
+--------
 
 .. toctree::
 
-   language/core/index
-   language/extensions/index
+   language/coq-library
 
-------
-Proofs
-------
-
-.. toctree::
-
-   proofs/writing-proofs/index
-   proofs/automatic-tactics/index
-   proofs/creating-tactics/index
-
----------
-Using Coq
----------
+-------
+Tactics
+-------
 
 .. toctree::
 
-   using/libraries/index
-   using/tools/index
+   proofs/writing-proofs/reasoning-inductives.rst
+   addendum/miscellaneous-extensions.rst
+   addendum/extraction.rst
+   addendum/ring.rst
+   addendum/nsatz.rst
+   addendum/micromega.rst
+   using/libraries/funind.rst
 
 --------
 Appendix
@@ -44,5 +38,5 @@ Appendix
 
 .. toctree::
 
-   appendix/history-and-changes/index
+   changes
    zebibliography

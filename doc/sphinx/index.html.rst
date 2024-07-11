@@ -12,33 +12,25 @@ Contents
    self
 
 .. toctree::
-   :caption: Specification language
+   :caption: Overview
 
-   language/core/index
-   language/extensions/index
-
-.. toctree::
-   :caption: Proofs
-
-   proofs/writing-proofs/index
-   proofs/automatic-tactics/index
-   proofs/creating-tactics/index
+   language/coq-library
 
 .. toctree::
-   :caption: Using Coq
+   :caption: Tactics
 
-   using/libraries/index
-   using/tools/index
+   proofs/writing-proofs/reasoning-inductives.rst
+   addendum/miscellaneous-extensions.rst
+   addendum/extraction.rst
+   addendum/ring.rst
+   addendum/nsatz.rst
+   addendum/micromega.rst
+   using/libraries/funind.rst
 
 .. toctree::
    :caption: Appendix
 
-   appendix/history-and-changes/index
-   appendix/indexes/index
+   changes
    zebibliography
-
-.. No entries yet
-  * :index:`thmindex`
-
 
 .. include:: license.rst
