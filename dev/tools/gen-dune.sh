@@ -24,6 +24,8 @@ TO_FLATTEN="\
   ZArith/All \
   ZArith/Base \
   ZArith/Ring \
+  extraction/All \
+  extraction/Base \
   micromega/Int63 \
   micromega/Lia \
   micromega/Lqa \
