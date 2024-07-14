@@ -1,4 +1,4 @@
-Require Import Stdlib.derive.Derive.
+Require Import TestSuite.derive.
 
 Derive f in (f = 1 + 1) as feq.
 Proof.

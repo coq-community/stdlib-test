@@ -1,7 +1,7 @@
 Module M.
 (* The encapsulation in a module tests that the grammar rules
    and keywords are correctly registered *)
-Require Derive.
+Require TestSuite.derive.
 End M.
 
 (* Tests when x is refined by typechecking *)

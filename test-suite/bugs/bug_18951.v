@@ -1,4 +1,4 @@
-Require Import Derive.
+Require Import TestSuite.derive.
 
 Derive foo : nat in True as bar.
 Proof. Admitted. (* Was an anomaly *)
