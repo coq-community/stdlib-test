@@ -97,7 +97,6 @@ with builtins; with (import <nixpkgs> {}).lib;
     # push-branches = [ "master" "branch2" ];
 
     master = [
-      "stdlib"
       # "mathcomp" -> overlay
       # "mathcomp-test" -> overlay
       "fourcolor"
@@ -195,6 +194,7 @@ with builtins; with (import <nixpkgs> {}).lib;
     // listToAttrs (forEach main (p:
       { name = p; value.override.version = "main"; }))
     // {
+      stdlib-subcomponents.job = true;
       coq-elpi.override.version = "proux01:split_stdlib";
       coq-elpi-test.override.version = "proux01:split_stdlib";
       mathcomp.override.version = "proux01:split_stdlib";
