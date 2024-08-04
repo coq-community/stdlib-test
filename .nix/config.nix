@@ -197,6 +197,7 @@ with builtins; with (import <nixpkgs> {}).lib;
       stdlib-subcomponents.job = true;
       stdlib-test.job = true;
       stdlib-refman-html.job = true;
+      stdlib-html.job = true;
       coq-elpi.override.version = "proux01:split_stdlib";
       coq-elpi-test.override.version = "proux01:split_stdlib";
       mathcomp.override.version = "proux01:split_stdlib";
