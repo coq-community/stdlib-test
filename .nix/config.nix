@@ -230,7 +230,7 @@ with builtins; with (import <nixpkgs> {}).lib;
     };
   in {
     "coq-master".coqPackages = common-bundles // {
-      coq.override.version = "proux01:stdlib_repo";
+      coq.override.version = "proux01:squeezing-paths";
     };
     "coq-master".ocamlPackages = {
       elpi.override.version = "1.19.2";
