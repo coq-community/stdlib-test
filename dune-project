@@ -1,5 +1,5 @@
-(lang dune 3.6)
-(name coq-stdlib-doc)
+(lang dune 3.8)
+(using coq 0.8)
 
 ; We use directory targets in documentation
 (using directory-targets 0.1)
