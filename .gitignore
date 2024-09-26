@@ -97,6 +97,8 @@ test-suite/Datatypes.mli
 test-suite/bug_10796.ml
 test-suite/bug_10796.mli
 test-suite/**/*.time
+theories/Makefile-*.coq
+theories/Makefile-*.coq.conf
 
 # `nix build` (through flake) symlink
 result
@@ -157,6 +159,5 @@ bin
 *.install
 
 .dune-stamp
-theories/dune
 user-contrib/Ltac2/dune
 /test-suite/test_suite_config.inc
