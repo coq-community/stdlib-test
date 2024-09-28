@@ -4,6 +4,9 @@ all:
 install:
 	dune install coq-stdlib
 
+build-% install-%:
+	+$(MAKE) -C theories $@
+
 # Make of individual .vo
 theories/%.vo:
 	dune build $@
