@@ -4,6 +4,9 @@ all:
 install:
 	dune install coq-stdlib
 
+build-% install-%:
+	+$(MAKE) -C theories $@
+
 # Make of individual .vo
 theories/%.vo:
 	dune build $@
@@ -11,7 +14,11 @@ theories/%.vo:
 refman-html:
 	dune build --no-buffer @refman-html
 
-stdlib-html:
+doc/stdlib/depends.png: doc/stdlib/depends
+	dot -Tpng $< -o $@
+
+stdlib-html: doc/stdlib/depends.png
+	dune build -p coq-stdlib @install
 	dune build @stdlib-html
 
 # Ideally this would be generated from .nix/config.nix, currently obtained with
